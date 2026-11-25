@@ -32,13 +32,14 @@
                 <li><a href="login.html" id="nav-login">Войти</a></li>
                 <li><a href="register.html" id="nav-register">Регистрация</a></li>
                 <li><a href="profile.html" id="nav-profile">Личный кабинет</a></li>
-                <li><a href="" id="nav-catalog">Популярные достопримечательности</a></li>
-                <li><a href="" id="go-to-search">Поиск достопримечательностей</a></li>
+                <li><a href="#popular-section" id="nav-catalog">Популярные достопримечательности</a></li>
+                <li><a href="#search-section" id="go-to-search">Поиск достопримечательностей</a></li>
             </ul>
         </div>
     </header>
     <main>
         <div class="yellow-block">
+            <h2 class="title">Преимущества платформы</h2>
             <div id="advantages-section">
                 <div class="card">
                     <img src="assets/img/free-icon-infographics-8322628.png" alt="IMG" class="img-card">
@@ -57,6 +58,7 @@
                     <span>Актуальная информация<br> и отзывы путешественников</span>
                 </div>
             </div>
+            <h2 class="title">Популярные достопримечательности</h2>
             <div id="popular-section">
                 <div class="landmark-card">
                     <img src="assets/img/images.jfif" alt="landmark">
@@ -130,7 +132,115 @@
                 </div>
             </div>
         </div>
+        <div class="white-block">
+            <h2 class="title" style="padding-bottom: 24px;">Красоты оренбуржья</h2>
+            <div id="slider-section">
+                <input class="slider-radio" type="radio" name="beauty-slider" id="slide-1" checked>
+                <input class="slider-radio" type="radio" name="beauty-slider" id="slide-2">
+                <input class="slider-radio" type="radio" name="beauty-slider" id="slide-3">
+                <input class="slider-radio" type="radio" name="beauty-slider" id="slide-4">
+
+                <div class="slider-viewport">
+                    <div class="slider-track">
+                        <article class="slide">
+                            <img src="assets/img/images (1).jfif" alt="Соль-Илецкие озёра">
+                            <div class="slide-caption">
+                                <h2>Соль-Илецкие озёра</h2>
+                                <p>Семь целебных озёр с солёной водой и лечебной грязью, известных далеко за пределами Оренбуржья.</p>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="assets/img/images (2).jfif" alt="Бузулукский бор">
+                            <div class="slide-caption">
+                                <h2>Бузулукский бор</h2>
+                                <p>Один из старейших сосновых боров России: реликтовые сосны, песчаные дюны и чистейший воздух.</p>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="assets/img/images (4).jfif" alt="Караван-Сарай">
+                            <div class="slide-caption">
+                                <h2>Караван-Сарай</h2>
+                                <p>Историко-архитектурный комплекс XIX века в Оренбурге, соединивший классицизм и мотивы башкирского аула.</p>
+                            </div>
+                        </article>
+
+                        <article class="slide">
+                            <img src="assets/img/images (3).jfif" alt="Гора Верблюд">
+                            <div class="slide-caption">
+                                <h2>Гора Верблюд</h2>
+                                <p>Скала-останец в форме двугорбого верблюда — визитная карточка Губерлинских гор.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Точки-индикаторы -->
+                <div id="slider-indicators">
+                    <label for="slide-1" title="Слайд 1"></label>
+                    <label for="slide-2" title="Слайд 2"></label>
+                    <label for="slide-3" title="Слайд 3"></label>
+                    <label for="slide-4" title="Слайд 4"></label>
+                </div>
+
+                <!-- Стрелки: показывается только пара, соответствующая активному слайду -->
+                <label for="slide-4" class="nav-arrow prev arrow-1" title="Назад">&#8249;</label>
+                <label for="slide-2" class="nav-arrow next arrow-1" title="Вперёд">&#8250;</label>
+
+                <label for="slide-1" class="nav-arrow prev arrow-2" title="Назад">&#8249;</label>
+                <label for="slide-3" class="nav-arrow next arrow-2" title="Вперёд">&#8250;</label>
+
+                <label for="slide-2" class="nav-arrow prev arrow-3" title="Назад">&#8249;</label>
+                <label for="slide-4" class="nav-arrow next arrow-3" title="Вперёд">&#8250;</label>
+
+                <label for="slide-3" class="nav-arrow prev arrow-4" title="Назад">&#8249;</label>
+                <label for="slide-1" class="nav-arrow next arrow-4" title="Вперёд">&#8250;</label>
+            </div>
+            <h2 class="title">Наши партнеры</h2>
+            <div id="partners-section">    
+                <div class="partner-card">
+                    <img src="assets/img/mtron.png" alt="partner">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/img/mtron.png" alt="partner">
+                </div>
+                <div class="partner-card">
+                    <img src="assets/img/mtron.png" alt="partner">
+                </div>
+            </div>
+        </div>
     </main>
-    <footer></footer>
+    <footer id="footer">
+        <div class="block-footer-left">
+            <a href="tel:88007654321">8-800-765-43-21</a>
+            <a href="malito:info@orenlandmarks.ru">info@orenlandmarks.ru</a>
+        </div>
+        <div class="block-footer-right">
+            <ul>
+                <li>
+                    <a href="index.html">Главная</a>
+                </li>
+                <li>
+                    <a href="login.html">Вход</a>
+                </li>
+                <li>
+                    <a href="register.html">Регистрация</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="profile.html">Личный кабинет</a>
+                </li>
+                <li>
+                    <a href="landmark.html">Страница достопримечательностей</a>
+                </li>
+                <li>
+                    <a href="admin.html">Административная панель</a>
+                </li>
+            </ul>
+            <a href="index_dark.html">Главная - Тёмная тема</a>
+        </div>
+    </footer>
 </body>
 </html>
